@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Warning":6,"mysqliTest::testgetConnection":4},"times":{"Warning":0,"mysqliTest::testOne":0.002,"mysqliTest::testgetConnection":0}}

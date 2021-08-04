@@ -7,6 +7,7 @@ class DBCnne
     private $_dbUsername = "Nome do Usuário";
     private $_dbPassword = " Senha de Acesso";
     private $_con;
+
     public function __construct() {
         try {
             $this->_con = new PDO("mysql:host=$this->_dbHostname;

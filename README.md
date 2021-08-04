@@ -8,7 +8,7 @@ Bootstrap 5
 - Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
 
 ## Back-end
-PHP 8.0
+PHP 7.4
 
 ##Documentação
 Inline
