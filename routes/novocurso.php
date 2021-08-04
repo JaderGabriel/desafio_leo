@@ -22,6 +22,7 @@ try {
             echo "Dados cadastrados com sucesso!";
             return header('inicial.html');
 
+
         } else {
             echo "Erro ao tentar efetivar cadastro";
             return header('inicial.html');
