@@ -27,7 +27,7 @@ Inline
     │    ├── Cursos
     │    ├── Matriculas
     │    ├── Usuarios
-    │   ├──
+    │    ├──
     Templates
     │   ├── Parte de Front-End
     │   ├── Inicio, MODAL e TELAs
