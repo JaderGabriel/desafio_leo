@@ -15,20 +15,20 @@ Inline
 
 ## Estrutura
 
-    CRUD_controle/
+    CRUD_controle/Operador do Banco de DADOS
     │   ├── Conexão com o BD
-    │   ├── Funções Default - Controle eventuais
     │   ├── Controle de USUARIOS
     │   ├── Contrle de CURSOS
     │   ├── Controle de Matriculas -> user(n):(n)cursos
-    │   ├──
     |
     DAO - OBJETOS
     │    ├── Cursos
     │    ├── Matriculas
     │    ├── Usuarios
     │    ├──
-    Templates
-    │   ├── Parte de Front-End
-    │   ├── Inicio, MODAL e TELAs
+    Routes - Forma de Proceder as requisições: Controle de Rotas
+    │   ├── LOGIN
+    │   ├── CARGA INICIAL no BD
+    │   ├── NOVO CURSO
+    │   ├── BUSCAR CURSOS no BD
     ```
