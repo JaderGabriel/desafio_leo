@@ -8,20 +8,23 @@
 
 
 try {
-    $datetime = date_create()->format('Y-m-d H:i:s');
+
     $conexao = new PDO("mysql:host=localhost; dbname=desafio_leo", "root", "root");
     $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $conexao->exec("set names utf8");
-    $senha = sha1('admin');
-    $stmt = $conexao->prepare("INSERT INTO user (nome, type, password) VALUES ('admin', 'admin',?)");
-    $stmt->bindParam(1,$senha);
+    $stmt = $conexao->prepare("INSERT INTO curso (nome, imagem, descricao) VALUES (?,?,?)");
+    $stmt->bindParam(1,$_POST['nome']);
+    $stmt->bindParam(2,$_POST['imagem']);
+    $stmt->bindParam(3,$_POST['descricao']);
 
     if ($stmt->execute()) {
         if ($stmt->rowCount() > 0) {
             echo "Dados cadastrados com sucesso!";
+            return header('inicial.html');
 
         } else {
             echo "Erro ao tentar efetivar cadastro";
+            return header('inicial.html');
         }
     } else {
         throw new PDOException("Erro: Não foi possível executar a declaração sql");
